@@ -68,4 +68,4 @@ php artisan test
 
 ## Plantilla de vistas
 
-`https://jeroennoten.github.io/Laravel-AdminLTE/`
+`https://demo.plainadmin.com/`
