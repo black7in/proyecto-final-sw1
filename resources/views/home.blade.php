@@ -1,22 +1,27 @@
-@extends('adminlte::page')
-
-@section('title', 'Dashboard')
-
-@section('content_header')
-    <h1>Dashboard</h1>
-@stop
+@extends('layouts.app')
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
-@stop
+    <!-- ========== title-wrapper start ========== -->
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>{{ __('Dashboard') }}</h2>
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- ========== title-wrapper end ========== -->
 
-@section('css')
-    {{-- Add here extra stylesheets --}}
-    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
-@stop
-
-@section('js')
-    <script>
-        console.log("Hi, I'm using the Laravel-AdminLTE package!");
-    </script>
-@stop
+    <div class="card-styles">
+        <div class="card-style-3 mb-30">
+            <div class="card-content">
+                <p>
+                    {{ __('You are logged in!') }}
+                </p>
+            </div>
+        </div>
+    </div>
+@endsection
