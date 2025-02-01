@@ -15,9 +15,27 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        $user = User::create([
+            'name' => 'Admin',
+            'email' => 'admin@gmail.com',
+            'password' => bcrypt('admin123')
+        ]);
+
+        // crear restaurante
+        $user->restaurante()->create([
+            'nombre' => 'Restaurante 1',
+            'pais' => 'Colombia',
+            'ciudad' => 'Bogotá',
+            'direccion' => 'Calle 123',
+            'telefono' => '1234567',
+            'descripcion' => 'Restaurante de prueba',
+            'user_id' => $user->id
+        ]);
+
+        $this->call([
+            UnidadMedidaSeeder::class,
+            InsumoSeeder::class,
+            ProveedorSeeder::class,
         ]);
     }
 }

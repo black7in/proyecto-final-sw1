@@ -13,14 +13,12 @@ return new class extends Migration
     {
         Schema::create('insumos', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('unidad_medidas_id');
-            $table->unsignedBigInteger('categoria_id')->nullable();
             $table->string('nombre', 50);
             $table->string('descripcion', 100)->nullable();
-            //$table->date('fecha_vencimiento');
-            $table->integer('stock_minimo');
-            $table->foreign('unidad_medidas_id')->references('id')->on('unidad_medidas');
-            $table->foreign('categoria_id')->references('id')->on('categorias');
+            $table->float('stock_minimo');
+            $table->string('imagen', 100)->nullable();
+            $table->foreignId('restaurante_id')->constrained('restaurantes');
+            $table->foreignId('unidad_medida_id')->constrained('unidad_medidas');
             $table->timestamps();
         });
     }

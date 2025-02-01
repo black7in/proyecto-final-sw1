@@ -17,4 +17,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+
+    Route::get('restaurante', [\App\Http\Controllers\RestauranteController::class, 'show'])->name('restaurante.show');
+    Route::put('restaurante', [\App\Http\Controllers\RestauranteController::class, 'update'])->name('restaurante.update');
 });
