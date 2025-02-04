@@ -50,6 +50,15 @@
     </li>
     --}}
 
+    <li class="nav-item @if (request()->routeIs('insumos.index') || request()->routeIs('insumos.create') || request()->routeIs('insumos.edit')) active @endif">
+        <a href="{{ route('insumos.index') }}">
+            <span class="icon">
+                <i class="lni lni-sprout"></i>
+            </span>
+            <span class="text">{{ __('Insumos') }}</span>
+        </a>
+    </li>
+
     <li class="nav-item @if (request()->routeIs('proveedores.index') ||
             request()->routeIs('proveedores.create') ||
             request()->routeIs('proveedores.edit')) active @endif">

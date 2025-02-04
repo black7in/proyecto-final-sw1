@@ -25,4 +25,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('proveedores', \App\Http\Controllers\ProveedorController::class);
 
     Route::resource('categorias', \App\Http\Controllers\CategoriaController::class);
+    Route::resource('insumos', \App\Http\Controllers\InsumoController::class);
 });

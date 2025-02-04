@@ -45,8 +45,13 @@ Sigue estos pasos para instalar y configurar el proyecto Laravel:
     ```bash
     php artisan migrate
     ```
+    
+7. **Habilitar storage publico:**
+    ```bash
+    php artisan storage:link
+    ```
 
-7. **Iniciar el servidor de desarrollo:**
+8. **Iniciar el servidor de desarrollo:**
     ```bash
     php artisan serve
     ```
@@ -69,3 +74,7 @@ php artisan test
 ## Plantilla de vistas
 
 `https://demo.plainadmin.com/`
+
+## Notas
+
+- Importante habilitar protocolo ssl para poder usar la camara
