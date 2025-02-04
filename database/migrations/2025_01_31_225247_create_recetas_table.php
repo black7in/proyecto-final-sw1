@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('nombre', 50);
             $table->string('indicaciones');
             $table->integer('tiempo_preparacion');
-            $table->integer('porciones');
             $table->string('imagen', 100)->nullable();
             $table->foreignId('restaurante_id')->constrained('restaurantes');
             $table->timestamps();

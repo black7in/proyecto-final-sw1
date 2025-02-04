@@ -18,8 +18,8 @@
         </a>
     </li>
 
-    <li class="nav-item @if (request()->routeIs('home')) active @endif">
-        <a href="{{ route('home') }}">
+    <li class="nav-item @if (request()->routeIs('recetas.index') || request()->routeIs('recetas.create') || request()->routeIs('recetas.edit')) active @endif">
+        <a href="{{ route('recetas.index') }}">
             <span class="icon">
                 <i class="lni lni-service"></i>
             </span>

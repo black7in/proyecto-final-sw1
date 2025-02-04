@@ -30,7 +30,9 @@ class Insumo extends Model
 
     public function recetas()
     {
-        return $this->belongsToMany(Receta::class)->withPivot('cantidad');
+        return $this->belongsToMany(Receta::class, 'recetas_insumos')
+            ->withPivot('cantidad') // Incluye el campo extra
+            ->withTimestamps();    // Incluye marcas de tiempo
     }
 
     public function categoria()

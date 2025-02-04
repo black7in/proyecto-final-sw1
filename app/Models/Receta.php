@@ -15,7 +15,6 @@ class Receta extends Model
         'nombre',
         'indicaciones',
         'tiempo_preparacion',
-        'porciones',
         'imagen',
         'restaurante_id',
     ];
@@ -27,8 +26,8 @@ class Receta extends Model
 
     public function insumos()
     {
-        return $this->belongsToMany(Insumo::class)->withPivot('cantidad');
+        return $this->belongsToMany(Insumo::class, 'recetas_insumos')
+            ->withPivot('cantidad') // Incluye el campo extra
+            ->withTimestamps();    // Incluye marcas de tiempo
     }
-
-
 }
