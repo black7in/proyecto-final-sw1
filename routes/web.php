@@ -20,4 +20,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('restaurante', [\App\Http\Controllers\RestauranteController::class, 'show'])->name('restaurante.show');
     Route::put('restaurante', [\App\Http\Controllers\RestauranteController::class, 'update'])->name('restaurante.update');
+
+    Route::resource('unidades', \App\Http\Controllers\UnidadMedidaController::class);
+    Route::resource('proveedores', \App\Http\Controllers\ProveedorController::class);
+
+    Route::resource('categorias', \App\Http\Controllers\CategoriaController::class);
 });

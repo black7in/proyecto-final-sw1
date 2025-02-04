@@ -23,4 +23,19 @@ class Restaurante extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function insumos()
+    {
+        return $this->hasMany(Insumo::class);
+    }
+
+    public function proveedors()
+    {
+        return $this->hasMany(Proveedor::class);
+    }
+
+    public function categorias()
+    {
+        return $this->hasMany(Categoria::class);
+    }
 }

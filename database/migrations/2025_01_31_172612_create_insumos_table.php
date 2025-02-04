@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('imagen', 100)->nullable();
             $table->foreignId('restaurante_id')->constrained('restaurantes');
             $table->foreignId('unidad_medida_id')->constrained('unidad_medidas');
+            $table->foreignId('categoria_id')->nullable()->constrained('categorias');
             $table->timestamps();
         });
     }

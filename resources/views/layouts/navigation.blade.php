@@ -1,4 +1,5 @@
 <ul>
+
     <li class="nav-item @if (request()->routeIs('home')) active @endif">
         <a href="{{ route('home') }}">
             <span class="icon">
@@ -17,7 +18,7 @@
         </a>
     </li>
 
-
+    {{-- 
     <li class="nav-item @if (request()->routeIs('users.index')) active @endif">
         <a href="{{ route('users.index') }}">
             <span class="icon">
@@ -31,7 +32,9 @@
             <span class="text">{{ __('Users') }}</span>
         </a>
     </li>
+    --}}
 
+    {{-- 
     <li class="nav-item @if (request()->routeIs('about')) active @endif">
         <a href="{{ route('about') }}">
             <span class="icon">
@@ -45,6 +48,27 @@
             <span class="text">{{ __('About us') }}</span>
         </a>
     </li>
+    --}}
+
+    <li class="nav-item @if (request()->routeIs('proveedores.index') ||
+            request()->routeIs('proveedores.create') ||
+            request()->routeIs('proveedores.edit')) active @endif">
+        <a href="{{ route('proveedores.index') }}">
+            <span class="icon">
+                <i class="lni lni-delivery"></i>
+            </span>
+            <span class="text">{{ __('Proveedores') }}</span>
+        </a>
+    </li>
+
+    <li class="nav-item @if (request()->routeIs('unidades.index')) active @endif">
+        <a href="{{ route('unidades.index') }}">
+            <span class="icon">
+                <i class="lni lni-cogs"></i>
+            </span>
+            <span class="text">{{ __('Unidades de medida') }}</span>
+        </a>
+    </li>
 
     <li class="nav-item @if (request()->routeIs('restaurante.show')) active @endif">
         <a href="{{ route('restaurante.show') }}">
@@ -54,5 +78,6 @@
             <span class="text">{{ __('Mi Restaurante') }}</span>
         </a>
     </li>
+
 
 </ul>

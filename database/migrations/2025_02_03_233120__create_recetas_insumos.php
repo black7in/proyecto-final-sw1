@@ -11,16 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('recetas', function (Blueprint $table) {
+        //
+        Schema::create('recetas_insumos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre', 50);
-            $table->string('indicaciones');
-            $table->integer('tiempo_preparacion');
-            $table->integer('porciones');
-            $table->string('imagen', 100)->nullable();
-            $table->foreignId('restaurante_id')->constrained('restaurantes');
+            $table->foreignId('receta_id')->constrained('recetas');
+            $table->foreignId('insumo_id')->constrained('insumos');
+            $table->integer('cantidad');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -28,6 +27,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('recetas');
+        //
+        Schema::dropIfExists('recetas_insumos');
     }
 };

@@ -20,6 +20,7 @@ class ProveedorSeeder extends Seeder
             'telefono' => '1234567890',
             'email' => 'pepe@gmail.com',
             'descripcion' => 'Proveedor de frutas',
+            'restaurante_id' => 1,
         ]);
 
         Proveedor::create([
@@ -28,6 +29,7 @@ class ProveedorSeeder extends Seeder
             'telefono' => '0987654321',
             'email' => 'juan@gmail.com',
             'descripcion' => 'Proveedor de verduras',
+            'restaurante_id' => 1,
         ]);
 
         Proveedor::create([
@@ -36,6 +38,7 @@ class ProveedorSeeder extends Seeder
             'telefono' => '0987654321',
             'email' => 'maria@gmail.com',
             'descripcion' => 'Proveedor de carnes',
+            'restaurante_id' => 1,
         ]);
 
         Proveedor::create([
@@ -44,6 +47,7 @@ class ProveedorSeeder extends Seeder
             'telefono' => '0987654321',
             'email' => 'jose@gmail.com',
             'descripcion' => 'Proveedor de lacteos',
+            'restaurante_id' => 1,
         ]);
 
         Proveedor::create([
@@ -52,6 +56,7 @@ class ProveedorSeeder extends Seeder
             'telefono' => '0987654321',
             'email' => 'ana@gmail.com',
             'descripcion' => 'Proveedor de pan',
+            'restaurante_id' => 1,
         ]);
 
         Proveedor::create([
@@ -60,6 +65,7 @@ class ProveedorSeeder extends Seeder
             'telefono' => '0987654321',
             'email' => 'pedo@gmail.com',
             'descripcion' => 'Proveedor de frutas',
+            'restaurante_id' => 1,
         ]);
 
         Proveedor::create([
@@ -68,6 +74,7 @@ class ProveedorSeeder extends Seeder
             'telefono' => '0987654321',
             'email' => 'juanita@gmail.com',
             'descripcion' => 'Proveedor de verduras',
+            'restaurante_id' => 1,
         ]);
     }
 }

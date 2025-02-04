@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre', 50);
             $table->string('descripcion', 100)->nullable();
+            $table->foreignId('restaurante_id')->constrained('restaurantes');
             $table->timestamps();
         });
     }
