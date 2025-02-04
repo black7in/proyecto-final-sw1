@@ -38,4 +38,10 @@ class Restaurante extends Model
     {
         return $this->hasMany(Categoria::class);
     }
+
+    // movimientos de inventario
+    public function movimientos()
+    {
+        return $this->hasMany(MovimientoInventario::class);
+    }
 }

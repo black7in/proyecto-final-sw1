@@ -37,4 +37,9 @@ class Insumo extends Model
     {
         return $this->belongsTo(Categoria::class);
     }
+
+    public function movimiento_inventarios()
+    {
+        return $this->hasMany(MovimientoInventario::class);
+    }
 }
