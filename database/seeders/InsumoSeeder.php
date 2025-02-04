@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Insumo;
-
+use App\Models\Categoria;
 class InsumoSeeder extends Seeder
 {
     /**
@@ -22,6 +22,7 @@ class InsumoSeeder extends Seeder
         'restaurante_id',
         'unidad_medida_id',
         */
+        $categoria = Categoria::where('nombre', 'Otros')->first();
 
         Insumo::create([
             'nombre' => 'Arroz',
@@ -30,6 +31,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'arroz.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
 
         Insumo::create([
@@ -39,6 +41,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'azucar.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
 
         Insumo::create([
@@ -48,6 +51,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'aceite.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
 
         Insumo::create([
@@ -57,6 +61,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'sal.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
 
         Insumo::create([
@@ -66,6 +71,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'pimienta.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
 
         Insumo::create([
@@ -75,6 +81,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'cebolla.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
 
         Insumo::create([
@@ -84,6 +91,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'ajo.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
 
         Insumo::create([
@@ -93,6 +101,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'papa.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
         
         Insumo::create([
@@ -102,6 +111,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'tomate.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
 
         Insumo::create([
@@ -111,6 +121,7 @@ class InsumoSeeder extends Seeder
             'imagen' => 'lechuga.jpg',
             'restaurante_id' => 1,
             'unidad_medida_id' => 1,
+            'categoria_id' => $categoria->id
         ]);
     }
 }

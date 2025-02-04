@@ -61,6 +61,18 @@
         </a>
     </li>
 
+    <li class="nav-item @if (request()->routeIs('categorias.index') ||
+            request()->routeIs('categorias.create') ||
+            request()->routeIs('categorias.edit')) active @endif">
+        <a href="{{ route('categorias.index') }}">
+            <span class="icon">
+                <i class="lni lni-tag"></i>
+            </span>
+            <span class="text">{{ __('Categorías') }}</span>
+        </a>
+    </li>
+
+
     <li class="nav-item @if (request()->routeIs('unidades.index')) active @endif">
         <a href="{{ route('unidades.index') }}">
             <span class="icon">

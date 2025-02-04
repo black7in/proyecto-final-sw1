@@ -34,6 +34,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UnidadMedidaSeeder::class,
+            CategoriaSeeder::class,
             InsumoSeeder::class,
             ProveedorSeeder::class,
         ]);
