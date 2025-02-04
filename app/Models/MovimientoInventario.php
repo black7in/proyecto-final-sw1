@@ -25,4 +25,8 @@ class MovimientoInventario extends Model
     {
         return $this->belongsTo(Restaurante::class);
     }
+    public function venta()
+    {
+        return $this->belongsTo(Venta::class);
+    }
 }

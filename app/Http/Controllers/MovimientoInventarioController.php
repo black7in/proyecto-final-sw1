@@ -48,6 +48,12 @@ class MovimientoInventarioController extends Controller
             'restaurante_id' => auth()->user()->restaurante->id
         ]);
 
+        // Cada que se hace un movimiento de inventario se calcula la cantidad diponible del insumo si esta debajo del stock minimo se envia un correo
+        /*$insumo = Insumo::find($request->insumo);
+        if ($insumo->getCantidadTotal() < $insumo->stock_minimo) {
+            // Enviar correo
+            Mail::to(auth()->user()->email)->send(new StockMinimo($insumo));
+        }*/
         return redirect()->route('movimientos.index');
     }
 

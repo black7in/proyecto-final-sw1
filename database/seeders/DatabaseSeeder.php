@@ -37,8 +37,9 @@ class DatabaseSeeder extends Seeder
             CategoriaSeeder::class,
             InsumoSeeder::class,
             ProveedorSeeder::class,
-            MovimientoSeeder::class,
             RecetaSeeder::class,
+            VentaSeeder::class,
+            MovimientoSeeder::class,
         ]);
     }
 }

@@ -9,6 +9,15 @@
         </a>
     </li>
 
+    <li class="nav-item @if (request()->routeIs('ventas.index') || request()->routeIs('ventas.create') || request()->routeIs('ventas.edit')) active @endif">
+        <a href="{{ route('ventas.index') }}">
+            <span class="icon">
+                <i class="lni lni-dollar"></i>
+            </span>
+            <span class="text">{{ __('Ventas') }}</span>
+        </a>
+    </li>
+
     <li class="nav-item @if (request()->routeIs('movimientos.index') || request()->routeIs('movimientos.create') || request()->routeIs('movimientos.edit')) active @endif">
         <a href="{{ route('movimientos.index') }}">
             <span class="icon">

@@ -6,7 +6,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="title mb-30">
-                    <h2>{{ __('Insumos del Restaurante') }}</h2>
+                    <h2>{{ __('Ventas') }}</h2>
                 </div>
             </div>
             <!-- end col -->
@@ -15,13 +15,14 @@
     </div>
     <!-- ========== title-wrapper end ========== -->
 
-
     <div class="tables-wrapper">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card-style mb-30">
-                    <h6 class="mb-10">Tabla de todos los insumos del restaurante.</h6>
-                    <a href="{{ route('insumos.create') }}" class="main-btn dark-btn btn-hover">
+                    <h6 class="mb-10">Tabla de ventas</h6>
+                    <p>Registra las ventas que hiciste en el día o el momento, no importa cuantos platos el sistema calcula
+                        cuanto de insumos gastaste.</p>
+                    <a href="{{ route('ventas.create') }}" class="main-btn dark-btn btn-hover mt-3">
                         <i class="lni lni-circle-plus"></i>
                         Crear nuevo
                     </a>
@@ -30,71 +31,68 @@
                             <thead>
                                 <tr>
                                     <th class="lead-info">
-                                        <h6>Nombre</h6>
-                                    </th>
-                                    <th class="lead-email">
-                                        <h6>Descripción</h6>
+                                        <h6>Identificador</h6>
                                     </th>
                                     <th>
-                                        <h6>Stock Minimo</h6>
+                                        <h6>Receta</h6>
                                     </th>
                                     <th>
-                                        <h6>Categoria</h6>
+                                        <h6>Fecha</h6>
                                     </th>
                                     <th>
-                                        <h6>Stock Disponible</h6>
+                                        <h6>Cantidad</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Precio porción</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Total</h6>
                                     </th>
                                     <th>
                                         <h6>Acciones</h6>
-                                    </th>
                                 </tr>
                                 <!-- end table row-->
                             </thead>
                             <tbody>
-                                @forelse ($insumos as $insumo)
+                                @forelse ($ventas as $venta)
                                     <tr>
+                                        <td class="min-width">
+                                            <p>{{ $venta->id }}</p>
+                                        </td>
                                         <td class="min-width">
                                             <div class="lead">
                                                 <div class="lead-image">
-                                                    <img src="{{ $insumo->imagen ? asset('storage/' . $insumo->imagen) : asset('images/cereales.jpg') }}" alt="">
+                                                    <img src="{{ $venta->receta->imagen ? asset('storage/' . $venta->receta->imagen) : asset('images/recetas.jpg') }}"
+                                                        alt="">
                                                 </div>
                                                 <div class="lead-text">
-                                                    <p>{{$insumo->nombre}}</p>
+                                                    <p>{{ $venta->receta->nombre }}</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="min-width">
-                                            <p>{{ $insumo->descripcion }}</p>
+                                            <p>{{ $venta->created_at->format('d/m/Y') }}</p>
                                         </td>
                                         <td class="min-width">
-                                            <p>{{ $insumo->stock_minimo }}</p>
+                                            <p>{{ $venta->cantidad }} Porciones</p>
                                         </td>
                                         <td class="min-width">
-                                            <p>{{ $insumo->categoria->nombre }}</p>
+                                            <p>{{ $venta->precio }} $.</p>
                                         </td>
                                         <td class="min-width">
-                                            <p>{{ $insumo->getCantidadTotal() }} {{$insumo->unidad_medida->abreviatura}}</p>
+                                            <p>{{ $venta->total }} $.</p>
                                         </td>
                                         <td>
                                             <div class="action">
-                                                <form action="{{ route('insumos.destroy', $insumo->id) }}"
-                                                    method="POST">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="text-danger">
-                                                        <i class="lni lni-trash-can"></i>
-                                                    </button>
-                                                </form>
-                                                <a href="{{ route('insumos.edit', $insumo->id) }}"
-                                                    class="text-primary">
-                                                    <i class="lni lni-pencil"></i>
+                                                <a href="{{ route('ventas.show', $venta->id) }}" class="text-success">
+                                                    <i class="lni lni-eye"></i>
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
                                 @empty
                                     <tr>
-                                        <td colspan="3" class="text-center">No existen categorias</td>
+                                        <td colspan="3" class="text-center">No existen ventas disponibles</td>
                                     </tr>
                                 @endforelse
                                 <!-- end table row -->

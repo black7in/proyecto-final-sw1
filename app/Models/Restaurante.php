@@ -48,4 +48,9 @@ class Restaurante extends Model
     {
         return $this->hasMany(Receta::class);
     }
+    //obtener ventas
+    public function ventas()
+    {
+        return $this->hasManyThrough(Venta::class, Receta::class);
+    }
 }

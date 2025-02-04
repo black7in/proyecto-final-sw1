@@ -18,6 +18,10 @@ return new class extends Migration
             $table->string('motivo'); // compra, venta, ajuste, etc
             $table->foreignId('insumo_id')->constrained('insumos');
             $table->foreignId('restaurante_id')->constrained('restaurantes');
+            // relacion con venta
+            $table->foreignId('venta_id')->nullable()->constrained('ventas');
+            // relacion con compra
+            //$table->foreignId('compra_id')->nullable()->constrained('compras');
             $table->timestamps();
         });
     }

@@ -44,4 +44,12 @@ class Insumo extends Model
     {
         return $this->hasMany(MovimientoInventario::class);
     }
+
+    // Función para obtener la cantidad total del insumo en el restaurante, sumando las cantidades de los movimientos de inventario de tipo entrada y restando las de tipo salida
+    public function getCantidadTotal()
+    {
+        $entradas = $this->movimiento_inventarios->where('tipo', 'entrada')->sum('cantidad');
+        $salidas = $this->movimiento_inventarios->where('tipo', 'salida')->sum('cantidad');
+        return $entradas - $salidas;
+    }
 }
