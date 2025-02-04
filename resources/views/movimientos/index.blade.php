@@ -21,7 +21,7 @@
                 <div class="card-style mb-30">
                     <h6 class="mb-10">Tabla de los movimientos del inventario</h6>
                     <p>Para crear un nuevo movimiento debe especificar si es movimiento de entrada o salida.</p>
-                    <a href="{{ route('insumos.create') }}" class="main-btn dark-btn btn-hover mt-2">
+                    <a href="{{ route('movimientos.create') }}" class="main-btn dark-btn btn-hover mt-2">
                         <i class="lni lni-circle-plus"></i>
                         Crear nuevo
                     </a>
@@ -37,6 +37,9 @@
                                     </th>
                                     <th>
                                         <h6>Insumo</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Cantidad</h6>
                                     </th>
                                     <th>
                                         <h6>Motivo</h6>
@@ -59,10 +62,28 @@
                                             </div>
                                         </td>
                                         <td class="min-width">
-                                            <p>{{ $movimiento->tipo }}</p>
+                                            <p>
+                                                @if ($movimiento->tipo == 'entrada')
+                                                    <span class="badge bg-success">Entrada</span>
+                                                @else
+                                                    <span class="badge bg-danger">Salida</span>
+                                                @endif
+                                            </p>
                                         </td>
                                         <td class="min-width">
-                                            <p>{{ $movimiento->insumo->nombre }}</p>
+                                            <div class="lead">
+                                                <div class="lead-image">
+                                                    <img src="{{ $movimiento->insumo->imagen ? asset('storage/' . $movimiento->insumo->imagen) : asset('images/cereales.jpg') }}"
+                                                        alt="">
+                                                </div>
+                                                <div class="lead-text">
+                                                    <p>{{ $movimiento->insumo->nombre }}</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="min-width">
+                                            <p>{{ $movimiento->cantidad }}
+                                                {{ $movimiento->insumo->unidad_medida->abreviatura }}</p>
                                         </td>
                                         <td class="min-width">
                                             <p>{{ $movimiento->motivo }}</p>
@@ -72,14 +93,16 @@
                                         </td>
                                         <td>
                                             <div class="action">
-                                                <form action="{{ route('movimientos.destroy', $movimiento->id) }}" method="POST">
+                                                <form action="{{ route('movimientos.destroy', $movimiento->id) }}"
+                                                    method="POST">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="text-danger">
                                                         <i class="lni lni-trash-can"></i>
                                                     </button>
                                                 </form>
-                                                <a href="{{ route('movimientos.edit', $movimiento->id) }}" class="text-primary">
+                                                <a href="{{ route('movimientos.edit', $movimiento->id) }}"
+                                                    class="text-primary">
                                                     <i class="lni lni-pencil"></i>
                                                 </a>
                                             </div>

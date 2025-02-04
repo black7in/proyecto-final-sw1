@@ -22,7 +22,9 @@ class MovimientoInventarioController extends Controller
      */
     public function create()
     {
-        //
+        //obtener los insumos del restaurante
+        $insumos = auth()->user()->restaurante->insumos;
+        return view('movimientos.create', compact('insumos'));
     }
 
     /**
@@ -31,6 +33,22 @@ class MovimientoInventarioController extends Controller
     public function store(Request $request)
     {
         //
+        $request->validate([
+            'cantidad' => 'required|numeric',
+            'tipo' => 'required|in:entrada,salida',
+            'motivo' => 'required|string|max:100',
+            'insumo' => 'required',
+        ]);
+
+        MovimientoInventario::create([
+            'cantidad' => $request->cantidad,
+            'tipo' => $request->tipo,
+            'motivo' => $request->motivo,
+            'insumo_id' => $request->insumo,
+            'restaurante_id' => auth()->user()->restaurante->id
+        ]);
+
+        return redirect()->route('movimientos.index');
     }
 
     /**
