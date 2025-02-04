@@ -18,7 +18,7 @@
         </a>
     </li>
 
-    <li class="nav-item @if (request()->routeIs('recetas.index') || request()->routeIs('recetas.create') || request()->routeIs('recetas.edit')) active @endif">
+    <li class="nav-item @if (request()->routeIs('recetas.index') || request()->routeIs('recetas.create') || request()->routeIs('recetas.edit') || request()->routeIs('recetas.show')) active @endif">
         <a href="{{ route('recetas.index') }}">
             <span class="icon">
                 <i class="lni lni-service"></i>
