@@ -1,11 +1,19 @@
 <ul>
-
     <li class="nav-item @if (request()->routeIs('home')) active @endif">
         <a href="{{ route('home') }}">
             <span class="icon">
                 <i class="lni lni-restaurant"></i>
             </span>
             <span class="text">{{ __('Dashboard') }}</span>
+        </a>
+    </li>
+
+    <li class="nav-item @if (request()->routeIs('predicciones.index')) active @endif">
+        <a href="{{ route('predicciones.index') }}">
+            <span class="icon">
+                <i class="lni lni-reddit"></i>
+            </span>
+            <span class="text">{{ __('Predicciones') }}</span>
         </a>
     </li>
 
@@ -18,7 +26,9 @@
         </a>
     </li>
 
-    <li class="nav-item @if (request()->routeIs('movimientos.index') || request()->routeIs('movimientos.create') || request()->routeIs('movimientos.edit')) active @endif">
+    <li class="nav-item @if (request()->routeIs('movimientos.index') ||
+            request()->routeIs('movimientos.create') ||
+            request()->routeIs('movimientos.edit')) active @endif">
         <a href="{{ route('movimientos.index') }}">
             <span class="icon">
                 <i class="lni lni-cart"></i>
@@ -27,7 +37,10 @@
         </a>
     </li>
 
-    <li class="nav-item @if (request()->routeIs('recetas.index') || request()->routeIs('recetas.create') || request()->routeIs('recetas.edit') || request()->routeIs('recetas.show')) active @endif">
+    <li class="nav-item @if (request()->routeIs('recetas.index') ||
+            request()->routeIs('recetas.create') ||
+            request()->routeIs('recetas.edit') ||
+            request()->routeIs('recetas.show')) active @endif">
         <a href="{{ route('recetas.index') }}">
             <span class="icon">
                 <i class="lni lni-service"></i>

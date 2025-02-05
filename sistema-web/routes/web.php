@@ -29,4 +29,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('movimientos', \App\Http\Controllers\MovimientoInventarioController::class);
     Route::resource('recetas', \App\Http\Controllers\RecetaController::class);
     Route::resource('ventas', \App\Http\Controllers\VentaController::class);
+
+    Route::get('predicciones', [\App\Http\Controllers\PrediccionesController::class, 'index'])->name('predicciones.index');
 });
