@@ -30,4 +30,16 @@ class Receta extends Model
             ->withPivot('cantidad') // Incluye el campo extra
             ->withTimestamps();    // Incluye marcas de tiempo
     }
+
+    // calcular cantidad de insumos gastados en una receta
+    public function insumosGastados($cantidadRecetas)
+    {
+        $insumos = $this->insumos;
+        $insumosGastados = [];
+        foreach ($insumos as $insumo) {
+            $insumosGastados[$insumo->id] = $insumo->pivot->cantidad * $cantidadRecetas;
+        }
+        
+        return $insumosGastados;
+    }
 }

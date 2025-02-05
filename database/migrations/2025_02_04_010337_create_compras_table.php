@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('compras', function (Blueprint $table) {
             $table->id();
+            // costo total
+            $table->float('costo_total');
+            // relacion con proveedor
+            $table->foreignId('proveedor_id')->constrained('proveedores');
             
             $table->timestamps();
         });

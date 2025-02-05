@@ -30,7 +30,7 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th class="lead-info">
+                                    <th class="">
                                         <h6>Identificador</h6>
                                     </th>
                                     <th>

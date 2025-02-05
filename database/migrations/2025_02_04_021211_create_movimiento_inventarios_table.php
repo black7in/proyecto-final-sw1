@@ -21,7 +21,7 @@ return new class extends Migration
             // relacion con venta
             $table->foreignId('venta_id')->nullable()->constrained('ventas');
             // relacion con compra
-            //$table->foreignId('compra_id')->nullable()->constrained('compras');
+            $table->foreignId('compra_id')->nullable()->constrained('compras');
             $table->timestamps();
         });
     }
