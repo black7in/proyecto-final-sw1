@@ -15,7 +15,6 @@ __pycache__/
 *.log
 
 # Archivos de datos
-*.csv
 *.sqlite3
 
 # Archivos de configuración de Docker

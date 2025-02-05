@@ -1,0 +1,212 @@
+INSUMO,CANTIDAD,DÍA,MES,PLATO,DESPERDICIO
+Lomo de res,1,Lunes,Enero,Lomo Saltado,0.1
+Cebolla,1,Lunes,Enero,Lomo Saltado,0.05
+Tomate,1,Lunes,Enero,Lomo Saltado,0.05
+Papa,2,Lunes,Enero,Lomo Saltado,0.2
+Sillao,1,Lunes,Enero,Lomo Saltado,0.02
+Vinagre,1,Lunes,Enero,Lomo Saltado,0.02
+Aceite,1,Lunes,Enero,Lomo Saltado,0.05
+Pechuga de pollo,2,Martes,Febrero,Ají de Gallina,0.15
+Pan,6,Martes,Febrero,Ají de Gallina,0.1
+Leche,2,Martes,Febrero,Ají de Gallina,0.1
+Ají amarillo,1,Martes,Febrero,Ají de Gallina,0.05
+Arroz,2,Martes,Febrero,Ají de Gallina,0.1
+Pescado corvina,2,Miércoles,Marzo,Ceviche de Pescado,0.2
+Limón,2,Miércoles,Marzo,Ceviche de Pescado,0.1
+Cebolla,1,Miércoles,Marzo,Ceviche de Pescado,0.05
+Ají limo,1,Miércoles,Marzo,Ceviche de Pescado,0.02
+Culantro,1,Miércoles,Marzo,Ceviche de Pescado,0.02
+Choclo,1,Miércoles,Marzo,Ceviche de Pescado,0.1
+Camote,1,Miércoles,Marzo,Ceviche de Pescado,0.1
+Mariscos mixtos,2,Jueves,Abril,Arroz con Mariscos,0.2
+Arroz,2,Jueves,Abril,Arroz con Mariscos,0.1
+Pimiento,1,Jueves,Abril,Arroz con Mariscos,0.05
+Cebolla,1,Jueves,Abril,Arroz con Mariscos,0.05
+Ajo,1,Jueves,Abril,Arroz con Mariscos,0.02
+Ají panca,1,Jueves,Abril,Arroz con Mariscos,0.02
+Pollo entero,1,Viernes,Mayo,Pollo a la Brasa,0.3
+Cerveza,2,Viernes,Mayo,Pollo a la Brasa,0.1
+Romero,1,Viernes,Mayo,Pollo a la Brasa,0.02
+Ajo,1,Viernes,Mayo,Pollo a la Brasa,0.02
+Comino,1,Viernes,Mayo,Pollo a la Brasa,0.02
+Papa,3,Viernes,Mayo,Pollo a la Brasa,0.3
+Aceite,2,Viernes,Mayo,Pollo a la Brasa,0.1
+Papa amarilla,2,Sábado,Junio,Causa Rellena,0.2
+Pechuga de pollo,1,Sábado,Junio,Causa Rellena,0.1
+Limón,1,Sábado,Junio,Causa Rellena,0.05
+Ají amarillo,1,Sábado,Junio,Causa Rellena,0.02
+Huevos,3,Sábado,Junio,Causa Rellena,0.1
+Fideos tallarín,1,Domingo,Julio,Tallarines Verdes,0.1
+Espinaca,1,Domingo,Julio,Tallarines Verdes,0.05
+Lomo de res,1,Domingo,Julio,Tallarines Verdes,0.1
+Leche,1,Domingo,Julio,Tallarines Verdes,0.05
+Arroz,2,Lunes,Agosto,Arroz Chaufa,0.1
+Pechuga de pollo,1,Lunes,Agosto,Arroz Chaufa,0.1
+Huevos,4,Lunes,Agosto,Arroz Chaufa,0.2
+Sillao,1,Lunes,Agosto,Arroz Chaufa,0.02
+Kion,1,Lunes,Agosto,Arroz Chaufa,0.02
+Lomo de res,2,Martes,Septiembre,Seco de Res,0.3
+Culantro,2,Martes,Septiembre,Seco de Res,0.1
+Arroz,2,Martes,Septiembre,Seco de Res,0.1
+Ajo,1,Martes,Septiembre,Seco de Res,0.02
+Pescado corvina,2,Miércoles,Octubre,Chicharrón de Pescado,0.2
+Aceite,2,Miércoles,Octubre,Chicharrón de Pescado,0.1
+Huevos,2,Miércoles,Octubre,Chicharrón de Pescado,0.1
+Cebolla,1,Miércoles,Octubre,Chicharrón de Pescado,0.05
+Lomo de res,1,Jueves,Noviembre,Lomo Saltado,0.1
+Cebolla,1,Jueves,Noviembre,Lomo Saltado,0.05
+Tomate,1,Jueves,Noviembre,Lomo Saltado,0.05
+Papa,2,Jueves,Noviembre,Lomo Saltado,0.2
+Sillao,1,Jueves,Noviembre,Lomo Saltado,0.02
+Vinagre,1,Jueves,Noviembre,Lomo Saltado,0.02
+Aceite,1,Jueves,Noviembre,Lomo Saltado,0.05
+Pechuga de pollo,2,Viernes,Diciembre,Ají de Gallina,0.15
+Pan,6,Viernes,Diciembre,Ají de Gallina,0.1
+Leche,2,Viernes,Diciembre,Ají de Gallina,0.1
+Ají amarillo,1,Viernes,Diciembre,Ají de Gallina,0.05
+Arroz,2,Viernes,Diciembre,Ají de Gallina,0.1
+Culantro,2,Martes,Septiembre,Seco de Res,0.1
+Arroz,2,Martes,Septiembre,Seco de Res,0.1
+Ajo,1,Martes,Septiembre,Seco de Res,0.02
+Pescado corvina,2,Miércoles,Octubre,Chicharrón de Pescado,0.2
+Aceite,2,Miércoles,Octubre,Chicharrón de Pescado,0.1
+Huevos,2,Miércoles,Octubre,Chicharrón de Pescado,0.1
+Cebolla,1,Miércoles,Octubre,Chicharrón de Pescado,0.05
+Lomo de res,1,Jueves,Noviembre,Lomo Saltado,0.1
+Cebolla,1,Jueves,Noviembre,Lomo Saltado,0.05
+Tomate,1,Jueves,Noviembre,Lomo Saltado,0.05
+Papa,2,Jueves,Noviembre,Lomo Saltado,0.2
+Pollo entero,1,Viernes,Mayo,Pollo a la Brasa,0.3
+Cerveza,2,Viernes,Mayo,Pollo a la Brasa,0.1
+Romero,1,Viernes,Mayo,Pollo a la Brasa,0.02
+Ajo,1,Viernes,Mayo,Pollo a la Brasa,0.02
+Comino,1,Viernes,Mayo,Pollo a la Brasa,0.02
+Papa,3,Viernes,Mayo,Pollo a la Brasa,0.3
+Aceite,2,Viernes,Mayo,Pollo a la Brasa,0.1
+Papa amarilla,2,Sábado,Junio,Causa Rellena,0.2
+Pechuga de pollo,1,Sábado,Junio,Causa Rellena,0.1
+Limón,1,Sábado,Junio,Causa Rellena,0.05
+Ají amarillo,1,Sábado,Junio,Causa Rellena,0.02
+Huevos,3,Sábado,Junio,Causa Rellena,0.1
+Fideos tallarín,1,Domingo,Julio,Tallarines Verdes,0.1
+INSUMO,CANTIDAD,DÍA,MES,PLATO,DESPERDICIO
+Lomo de res,1,Lunes,Enero,Lomo Saltado,0.1
+Cebolla,1,Lunes,Enero,Lomo Saltado,0.05
+Tomate,1,Lunes,Enero,Lomo Saltado,0.05
+Papa,2,Lunes,Enero,Lomo Saltado,0.2
+Sillao,1,Lunes,Enero,Lomo Saltado,0.02
+Vinagre,1,Lunes,Enero,Lomo Saltado,0.02
+Aceite,1,Lunes,Enero,Lomo Saltado,0.05
+Pechuga de pollo,2,Martes,Febrero,Ají de Gallina,0.15
+Pan,6,Martes,Febrero,Ají de Gallina,0.1
+Leche,2,Martes,Febrero,Ají de Gallina,0.1
+Ají amarillo,1,Martes,Febrero,Ají de Gallina,0.05
+Arroz,2,Martes,Febrero,Ají de Gallina,0.1
+Pescado corvina,2,Miércoles,Marzo,Ceviche de Pescado,0.2
+Limón,2,Miércoles,Marzo,Ceviche de Pescado,0.1
+Cebolla,1,Miércoles,Marzo,Ceviche de Pescado,0.05
+Ají limo,1,Miércoles,Marzo,Ceviche de Pescado,0.02
+Culantro,1,Miércoles,Marzo,Ceviche de Pescado,0.02
+Choclo,1,Miércoles,Marzo,Ceviche de Pescado,0.1
+Camote,1,Miércoles,Marzo,Ceviche de Pescado,0.1
+Mariscos mixtos,2,Jueves,Abril,Arroz con Mariscos,0.2
+Arroz,2,Jueves,Abril,Arroz con Mariscos,0.1
+Pimiento,1,Jueves,Abril,Arroz con Mariscos,0.05
+Cebolla,1,Jueves,Abril,Arroz con Mariscos,0.05
+Ajo,1,Jueves,Abril,Arroz con Mariscos,0.02
+Ají panca,1,Jueves,Abril,Arroz con Mariscos,0.02
+Pollo entero,1,Viernes,Mayo,Pollo a la Brasa,0.3
+Cerveza,2,Viernes,Mayo,Pollo a la Brasa,0.1
+Romero,1,Viernes,Mayo,Pollo a la Brasa,0.02
+Ajo,1,Viernes,Mayo,Pollo a la Brasa,0.02
+Comino,1,Viernes,Mayo,Pollo a la Brasa,0.02
+Papa,3,Viernes,Mayo,Pollo a la Brasa,0.3
+Aceite,2,Viernes,Mayo,Pollo a la Brasa,0.1
+Papa amarilla,2,Sábado,Junio,Causa Rellena,0.2
+Pechuga de pollo,1,Sábado,Junio,Causa Rellena,0.1
+Limón,1,Sábado,Junio,Causa Rellena,0.05
+Ají amarillo,1,Sábado,Junio,Causa Rellena,0.02
+Huevos,3,Sábado,Junio,Causa Rellena,0.1
+Fideos tallarín,1,Domingo,Julio,Tallarines Verdes,0.1
+Espinaca,1,Domingo,Julio,Tallarines Verdes,0.05
+Lomo de res,1,Domingo,Julio,Tallarines Verdes,0.1
+Leche,1,Domingo,Julio,Tallarines Verdes,0.05
+Arroz,2,Lunes,Agosto,Arroz Chaufa,0.1
+Pechuga de pollo,1,Lunes,Agosto,Arroz Chaufa,0.1
+Huevos,4,Lunes,Agosto,Arroz Chaufa,0.2
+Sillao,1,Lunes,Agosto,Arroz Chaufa,0.02
+Kion,1,Lunes,Agosto,Arroz Chaufa,0.02
+Lomo de res,2,Martes,Septiembre,Seco de Res,0.3
+Culantro,2,Martes,Septiembre,Seco de Res,0.1
+Arroz,2,Martes,Septiembre,Seco de Res,0.1
+Ajo,1,Martes,Septiembre,Seco de Res,0.02
+Pescado corvina,2,Miércoles,Octubre,Chicharrón de Pescado,0.2
+Aceite,2,Miércoles,Octubre,Chicharrón de Pescado,0.1
+Huevos,2,Miércoles,Octubre,Chicharrón de Pescado,0.1
+Cebolla,1,Miércoles,Octubre,Chicharrón de Pescado,0.05
+Lomo de res,1,Jueves,Noviembre,Lomo Saltado,0.1
+Cebolla,1,Jueves,Noviembre,Lomo Saltado,0.05
+Tomate,1,Jueves,Noviembre,Lomo Saltado,0.05
+Papa,2,Jueves,Noviembre,Lomo Saltado,0.2
+Sillao,1,Jueves,Noviembre,Lomo Saltado,0.02
+Vinagre,1,Jueves,Noviembre,Lomo Saltado,0.02
+Aceite,1,Jueves,Noviembre,Lomo Saltado,0.05
+Pechuga de pollo,2,Viernes,Diciembre,Ají de Gallina,0.15
+Pan,6,Viernes,Diciembre,Ají de Gallina,0.1
+Leche,2,Viernes,Diciembre,Ají de Gallina,0.1
+Ají amarillo,1,Viernes,Diciembre,Ají de Gallina,0.05
+Arroz,2,Viernes,Diciembre,Ají de Gallina,0.1
+Pescado corvina,2,Sábado,Enero,Ceviche de Pescado,0.2
+Limón,2,Sábado,Enero,Ceviche de Pescado,0.1
+Cebolla,1,Sábado,Enero,Ceviche de Pescado,0.05
+Ají limo,1,Sábado,Enero,Ceviche de Pescado,0.02
+Culantro,1,Sábado,Enero,Ceviche de Pescado,0.02
+Choclo,1,Sábado,Enero,Ceviche de Pescado,0.1
+Camote,1,Sábado,Enero,Ceviche de Pescado,0.1
+Mariscos mixtos,2,Domingo,Febrero,Arroz con Mariscos,0.2
+Arroz,2,Domingo,Febrero,Arroz con Mariscos,0.1
+Pimiento,1,Domingo,Febrero,Arroz con Mariscos,0.05
+Cebolla,1,Domingo,Febrero,Arroz con Mariscos,0.05
+Ajo,1,Domingo,Febrero,Arroz con Mariscos,0.02
+Ají panca,1,Domingo,Febrero,Arroz con Mariscos,0.02
+Pollo entero,1,Lunes,Marzo,Pollo a la Brasa,0.3
+Cerveza,2,Lunes,Marzo,Pollo a la Brasa,0.1
+Romero,1,Lunes,Marzo,Pollo a la Brasa,0.02
+Ajo,1,Lunes,Marzo,Pollo a la Brasa,0.02
+Comino,1,Lunes,Marzo,Pollo a la Brasa,0.02
+Papa,3,Lunes,Marzo,Pollo a la Brasa,0.3
+Aceite,2,Lunes,Marzo,Pollo a la Brasa,0.1
+Papa amarilla,2,Martes,Abril,Causa Rellena,0.2
+Pechuga de pollo,1,Martes,Abril,Causa Rellena,0.1
+Limón,1,Martes,Abril,Causa Rellena,0.05
+Ají amarillo,1,Martes,Abril,Causa Rellena,0.02
+Huevos,3,Martes,Abril,Causa Rellena,0.1
+Fideos tallarín,1,Miércoles,Mayo,Tallarines Verdes,0.1
+Espinaca,1,Miércoles,Mayo,Tallarines Verdes,0.05
+Lomo de res,1,Miércoles,Mayo,Tallarines Verdes,0.1
+Leche,1,Miércoles,Mayo,Tallarines Verdes,0.05
+Arroz,2,Jueves,Junio,Arroz Chaufa,0.1
+Pechuga de pollo,1,Jueves,Junio,Arroz Chaufa,0.1
+Huevos,4,Jueves,Junio,Arroz Chaufa,0.2
+Sillao,1,Jueves,Junio,Arroz Chaufa,0.02
+Kion,1,Jueves,Junio,Arroz Chaufa,0.02
+Lomo de res,2,Viernes,Julio,Seco de Res,0.3
+Culantro,2,Viernes,Julio,Seco de Res,0.1
+Arroz,2,Viernes,Julio,Seco de Res,0.1
+Ajo,1,Viernes,Julio,Seco de Res,0.02
+Pescado corvina,2,Sábado,Agosto,Chicharrón de Pescado,0.2
+Aceite,2,Sábado,Agosto,Chicharrón de Pescado,0.1
+Huevos,2,Sábado,Agosto,Chicharrón de Pescado,0.1
+Cebolla,1,Sábado,Agosto,Chicharrón de Pescado,0.05
+Lomo de res,1,Domingo,Septiembre,Lomo Saltado,0.1
+Cebolla,1,Domingo,Septiembre,Lomo Saltado,0.05
+Tomate,1,Domingo,Septiembre,Lomo Saltado,0.05
+Papa,2,Domingo,Septiembre,Lomo Saltado,0.2
+Sillao,1,Domingo,Septiembre,Lomo Saltado,0.02
+Vinagre,1,Domingo,Septiembre,Lomo Saltado,0.02
+Aceite,1,Domingo,Septiembre,Lomo Saltado,0.05
+Pechuga de pollo,2,Lunes,Octubre,Ají de Gallina,0.15
+Pan,6,Lunes,Octubre,Ají de Gallina,0.1
+Leche,2,Lunes,Octubre,Ají de Gallina,0.1
+Ají amarillo,1,Lunes,Octubre,Ají de Gallina,0.05
+Arroz,2,Lunes,Octubre,Ají de Gallina,0.1

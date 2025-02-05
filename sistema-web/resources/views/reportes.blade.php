@@ -6,7 +6,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="title mb-30">
-                    <h2>{{ __('Reportes') }}</h2>
+                    <h2>{{ __('Reportes Personalizados') }}</h2>
                 </div>
             </div>
             <!-- end col -->
@@ -15,5 +15,5 @@
     </div>
     <!-- ========== title-wrapper end ========== -->
 
-
+    @livewire('reportepersonalizado')
 @endsection

@@ -52,4 +52,12 @@ class Insumo extends Model
         $salidas = $this->movimiento_inventarios->where('tipo', 'salida')->sum('cantidad');
         return $entradas - $salidas;
     }
+
+    // Funcion para obtener la cantidad total del insumo usado
+    public function getCantidadUsada()
+    {
+        return $this->recetas->sum(function ($receta) {
+            return $receta->pivot->cantidad;
+        });
+    }
 }
