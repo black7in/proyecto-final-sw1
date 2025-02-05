@@ -27,7 +27,7 @@ data["MES"] = data["MES"].astype("category").cat.codes
 data["PLATO"] = data["PLATO"].astype("category").cat.codes
 
 # Variables independientes (features) y dependiente (target)
-X = data[["INSUMO", "DÍA", "MES", "PLATO", "DESPERDICIO"]]
+X = data[["INSUMO", "DÍA", "MES", "PLATO", "DESPERDICIO"]]  # Incluimos DESPERDICIO
 y = data["CANTIDAD"]
 
 # Dividir los datos en conjunto de entrenamiento y prueba
@@ -44,4 +44,4 @@ print(f"Error cuadrático medio (MSE): {mse}")
 
 # Guardar el modelo entrenado
 joblib.dump(model, "modelo_consumo.pkl")
-print("Modelo entrenado y guardado como 'model.pkl'")
+print("Modelo entrenado y guardado como 'modelo_consumo.pkl'")

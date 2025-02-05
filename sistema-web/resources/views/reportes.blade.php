@@ -6,7 +6,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="title mb-30">
-                    <h2>{{ __('Predicciones') }}</h2>
+                    <h2>{{ __('Reportes') }}</h2>
                 </div>
             </div>
             <!-- end col -->
@@ -15,11 +15,5 @@
     </div>
     <!-- ========== title-wrapper end ========== -->
 
-    @livewire('predicciondesperdicio')
 
-    @livewire('predicciondos')
-
-    @livewire('prediccionuno')
-
-    @livewire('calculoinsumo')
 @endsection

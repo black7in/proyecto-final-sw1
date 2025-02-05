@@ -81,6 +81,15 @@
     </li>
 
 
+    <li class="nav-item @if (request()->routeIs('reportes.index')) active @endif">
+        <a href="{{ route('reportes.index') }}">
+            <span class="icon">
+                <i class="lni lni-bar-chart"></i>
+            </span>
+            <span class="text">{{ __('Reportes') }}</span>
+        </a>
+    </li>
+
     <li class="nav-item @if (request()->routeIs('unidades.index')) active @endif">
         <a href="{{ route('unidades.index') }}">
             <span class="icon">
@@ -89,6 +98,7 @@
             <span class="text">{{ __('Unidades de medida') }}</span>
         </a>
     </li>
+
 
     <li class="nav-item @if (request()->routeIs('restaurante.show')) active @endif">
         <a href="{{ route('restaurante.show') }}">

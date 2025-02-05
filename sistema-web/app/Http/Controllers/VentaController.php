@@ -77,6 +77,7 @@ class VentaController extends Controller
     public function show(Venta $venta)
     {
         //
+        return view('ventas.show', compact('venta'));
     }
 
     /**

@@ -16,7 +16,7 @@ return new class extends Migration
             // costo total
             $table->float('costo_total');
             // relacion con proveedor
-            $table->foreignId('proveedor_id')->constrained('proveedores');
+            //$table->foreignId('proveedor_id')->constrained('proveedores');
             
             $table->timestamps();
         });

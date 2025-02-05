@@ -31,4 +31,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('ventas', \App\Http\Controllers\VentaController::class);
 
     Route::get('predicciones', [\App\Http\Controllers\PrediccionesController::class, 'index'])->name('predicciones.index');
+    Route::get('reportes', [\App\Http\Controllers\ReportesController::class, 'index'])->name('reportes.index');
 });

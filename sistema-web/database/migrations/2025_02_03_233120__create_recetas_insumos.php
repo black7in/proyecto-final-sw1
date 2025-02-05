@@ -17,6 +17,8 @@ return new class extends Migration
             $table->foreignId('receta_id')->constrained('recetas');
             $table->foreignId('insumo_id')->constrained('insumos');
             $table->integer('cantidad');
+            // agregar desperdicios
+            $table->integer('desperdicio')->nullable();
             $table->timestamps();
         });
 

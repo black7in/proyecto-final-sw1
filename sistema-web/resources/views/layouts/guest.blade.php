@@ -7,11 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{{ config('app.name', 'Laravel') }}</title>
     @vite('resources/sass/app.scss')
+    @livewireStyles
 </head>
 <body>
+
+    {$slot}
 
 <div class="row g-0 auth-row">
     @yield('content')
 </div>
+
+@livewireScripts
 </body>
 </html>

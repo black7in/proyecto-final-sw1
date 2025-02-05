@@ -9,6 +9,7 @@
     <!-- ========== All CSS files linkup ========= -->
     <link rel="stylesheet" href="{{ asset('css/lineicons.css') }}" />
     <script src="https://cdn.jsdelivr.net/npm/inferencejs@1.0.11"></script>
+    @livewireStyles
     @vite('resources/sass/app.scss')
 </head>
 
@@ -112,6 +113,7 @@
     <!-- ======== main-wrapper end =========== -->
 
     <!-- ========= All Javascript files linkup ======== -->
+    @livewireScripts
     @vite('resources/js/app.js')
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
